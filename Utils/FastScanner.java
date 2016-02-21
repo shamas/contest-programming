@@ -98,16 +98,4 @@ public class FastScanner {
         return val * mul;
     }
 
-    public static void main(String[] args) throws IOException{
-        //BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(FileDescriptor.in)));
-        FastScanner scanner = new FastScanner();
-        long begin = System.currentTimeMillis();
-        for(int i = 0; i < 1000000; ++i) {
-            scanner.nextInt();
-            //Integer.parseInt(reader.readLine());
-        }
-        long end = System.currentTimeMillis();
-        System.out.println(end - begin);
-    }
-
 }
