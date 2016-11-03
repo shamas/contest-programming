@@ -34,7 +34,7 @@ public class FastScanner {
                     input = newInput;
                 }
                 byte c = buffer[bufferPointer++];
-                if(c == (byte)'\n' || c == (byte)' ') {
+                if(bufferSize < 0 || c == (byte)'\n' || c == (byte)' ') {
                     inputLength = inputPointer;
                     inputPointer = 0;
                     return;
